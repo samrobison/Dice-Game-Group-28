@@ -1,0 +1,18 @@
+<h1>Player Rankings</h1>
+
+<ol>
+	<%if current_user%>
+		<%@players.each do |player|%>
+			<%unless current_user == player%>
+				<li><%=player.email %>: <%=player.wins %> wins</li>
+			<%else%>
+				<b><li>You: <%=player.wins %> wins</li></b>
+			<%end%>
+		<%end%>
+	<%else%>
+		<%@players.each do |player|%>
+			<b><%=player.email %>: <%=player.wins %> wins</b>
+		<%end%>
+	<%end%>
+
+</ol>

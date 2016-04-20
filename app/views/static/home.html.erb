@@ -1,0 +1,11 @@
+<div class="center jumbotron">
+  <h1>Welcome to Group 28's Dice Game</h1>
+
+  <h2>
+    View player rankings 
+    <%=link_to "here", static_stats_path %> 
+  </h2>
+  <% unless current_user %>
+  	<%= link_to "Sign up now!", new_user_registration_path , class: "btn btn-lg btn-primary" %>
+  <%end%>
+</div>

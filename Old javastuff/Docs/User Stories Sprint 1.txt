@@ -1,0 +1,17 @@
+As a player, I want to log in so that my profile statistics can be stored and retrieved over multiple sessions.
+
+As a player, I want to play a game so that I can test my skills against other competitors.
+
+As a player, I want to roll the dice, so that I can participate in the game and decide whether to bluff or tell the truth.
+
+As a player, I want to tell the truth about my dice so that I can safely accumulate points.
+
+As a player, I want to bluff about my dice so that I can get more points if I roll poorly.
+
+As a player, I want to call others on their bluffs so that I can benefit myself while simultaneously hurting my opponents.
+
+As a player, I want to play my immunity card so that I don't lose points for getting called on my bluff.
+
+As a player, I want to check my scores and wins so I can see how I'm doing against the other players.
+
+As a system, I want to collect scores and wins so that I can form a database of results.

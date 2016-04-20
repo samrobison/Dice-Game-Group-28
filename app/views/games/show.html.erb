@@ -1,0 +1,100 @@
+<script type="text/javascript">
+	var call = <%= @game.call %>;
+
+	$(document).ready(function() 
+	{
+		$("#scroll").scrollTop($("#scroll")[0].scrollHeight);
+		
+
+	    $('input[type=radio]').change(function() 
+	    {
+	        if(this.value == "bluff")
+	        {
+	        	$("#values").hide();
+	        	$("#game_call").append("<option id='bluffing' value='-1'></option>");
+	        	$("option:selected").removeAttr("selected");
+	        	$('#bluffing').attr('selected', true);
+
+	        }
+	        else
+	        {
+	        	$("#values").show();
+	        	$("#bluffing").remove();
+
+	        }
+	    });
+	});
+	
+
+
+
+</script>
+
+
+<% if !@myTurn and @game.round < 4%>
+ 	<meta http-equiv="refresh" content="5" />
+ <%end%>
+<h1> <%= @game.name %> </h1>
+<% if @game.round < 4 %>
+	<h3> Round <%=@game.round %>, <%=@turn.email %>'s Turn </h3>
+	<h3> Current call: <%= @game.call %> </h3>
+<%elsif @winners.count == 1%>
+	<h3>Winner is <%= @winners[0].email %></h3>
+<%else%>
+	<h3> 
+		Winners are
+		<%@winners.each do |winner|%>
+			<%= "#{winner.email} " %>
+		<%end%>
+	</h3>
+<%end%>
+
+<div>
+	<div class="row">
+		<div class="col-md-6">
+			<ul>
+				<% @players.each do |user| %>
+					<%next if user.id == current_user.id%>
+
+					<div class = "row">
+						<label> <%=user.email %> </label>: <%=@scores[user.email]%>
+					</div>
+				<%end%>
+			</ul>
+		</div>
+		
+		<div class="col-md-6">
+			<div id ="scroll" style="overflow:scroll;height: 300px;">
+				<%@game.history.each_line do |line|%>
+					<%=line%><br>
+				<%end%>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div onload="fixForm()">
+		<label>Your Score:</label> <%=@scores[current_user.email]%>
+		<br>
+		<% if @game.round < 4 %>
+			<label>Your Dice total:</label> <%=@total%>
+			<br>
+			<% if @myTurn %>
+				<div>
+					<%= form_for @game, url: {action: "update"} do |f| %>
+
+						<input type="radio" name="action" value="call" checked> Make Call<br>
+			  			<input type="radio" name="action" value="bluff"> Call Bluff<br>
+			  			<div id = "values">
+							<label>Call Amount:</label> <%= f.select :call, (@game.call + 1)..18, {} %>
+						</div>
+						<%= f.submit "Submit Turn", class: "btn btn-primary", id:"submit"%>
+						
+					<%end%>
+				</div>
+			<%end%>
+		<%end%>
+
+	</div>
+</div>

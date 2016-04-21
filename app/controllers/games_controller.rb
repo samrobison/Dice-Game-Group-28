@@ -80,15 +80,24 @@ class GamesController < ApplicationController
 		unless checkPermissions(params[:id])
 			redirect_to root_path
 		end
+		@total = 0
+		@myTurn = false
+		@turn = 0
+		@winners = Array.new()
+
 
 		@game = Game.find(params[:id])
 		@players = @game.users
 		@scores = @game.scores
-		@total = @game.dice[@game.users.index(current_user)]
-		@turn = @players[@game.turn]
-		@myTurn = (@turn == current_user)
-		@winners = findWinners(@game)	
 
+		if round < 4
+			@total = @game.dice[@game.users.index(current_user)]
+			@myTurn = (@turn == current_user)
+			@turn = @players[@game.turn]
+		else
+			@winners = findWinners(@game)
+		end
+		
 
 	end
 

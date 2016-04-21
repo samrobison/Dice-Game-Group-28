@@ -90,7 +90,7 @@ class GamesController < ApplicationController
 		@players = @game.users
 		@scores = @game.scores
 
-		if round < 4
+		if @game.round < 4
 			@total = @game.dice[@game.users.index(current_user)]
 			@myTurn = (@turn == current_user)
 			@turn = @players[@game.turn]

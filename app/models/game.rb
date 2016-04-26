@@ -8,7 +8,9 @@ class Game < ActiveRecord::Base
 	belongs_to :user, class_name: "User"
 	
 	validates :name, presence: true
-	validates :players, presence: true
+	validates :players, presence: true, numericality: {less_than: 10, greater_than: 1}
+	validates :humans, presence: true, numericality: {less_than: 10, greater_than: 0}
+
 
 	
 

@@ -11,18 +11,14 @@ Each human player needs their own computer and account.
 
 Round x: 
 
-Player1 makes a call. The player can choose to bluff or to make a call that is equal to or less than the total of their dice. 
-
+Player1 makes a call. The player can choose to bluff or to make a call. 
 <end of player1s turn>
 
 Player2 can choose to call a bluff on player1 or to make a call. 
-
 <end of player2s turn>
 
 If a player chooses to call a bluff it will end the round. 
-
 The player with the highest score will start the new round.
-
 The game ends with the end of the third round.
 
 ###### Overview of Rules

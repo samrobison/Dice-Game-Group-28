@@ -1,10 +1,10 @@
 PRODUCT BACKLOG
 ID	Story Name					          Progress	Priority	Comments	
- 1	User logs in				         Planned		1			     Need to decide on database type/structure
- 2	User joins game 			      Planned  2        Need to include order assignment and determination of leader
- 3	User rolls dice 			      Planned	 3			
- 4	User makes claim		      	Planned  4			     Maybe include evaluation of if claim is true or false in this step
- 5	User calls bluff			      Planned		5
- 6	User plays immunity card	Planned  8
- 7	User checks stats			     Planned		7		     	Potentially just have scores and wins displayed at all times
- 8	System records stats		   Planned		6
+ 1	User logs in				         complete		1			     Need to decide on database type/structure
+ 2	User joins game 			      complete  2        Need to include order assignment and determination of leader
+ 3	System rolls dice 			    complete	 3			
+ 4	User makes claim		      	complete  4			     Maybe include evaluation of if claim is true or false in this step
+ 5	User calls bluff			      complete		5
+ 6	User plays immunity card	Planned   8
+ 7	User checks stats			     complete		7		     	Potentially just have scores and wins displayed at all times
+ 8	System records stats		   complete 	6

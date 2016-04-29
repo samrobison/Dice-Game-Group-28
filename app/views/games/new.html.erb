@@ -18,7 +18,7 @@
       <%= f.select :players, (1..7) %>
 <br>
        <label>Human Player Names</label>
-       separate names with ,'s
+       separate names with ,'s (do not include yourself, and enter other human(s)' email(s)
         <%= text_field_tag :humans, nil, class: "form-control" %>
 <br>
       <%= f.submit "Start Game", class: "btn btn-primary" %>

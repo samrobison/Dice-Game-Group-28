@@ -12,7 +12,7 @@ As a player, I want to play a game so that I can test my skills against other co
 
 As a system, I want to roll the dice, so that players can participate in the game and decide whether to bluff or tell the truth.
 
-As a player, I want to tell the truth about my dice so that I can safely accumulate points.
+As a player, I want to make a claim about my dice so that I can safely accumulate points.
 
 As a player, I want to bluff about my dice so that I can get more points if I roll poorly.
 

@@ -1,4 +1,12 @@
+As a player, I want to sign up so that I can have my personal account to show off on the leaderboards.
+
 As a player, I want to log in so that my profile statistics can be stored and retrieved over multiple sessions.
+
+As a player, I want to start a multiplayer game so I can play against others. 
+
+As a player, I want to start a solo game so I can test my skills against the computer.
+
+As a player, I want to invite other players so that I can play against my friends.
 
 As a player, I want to play a game so that I can test my skills against other competitors.
 

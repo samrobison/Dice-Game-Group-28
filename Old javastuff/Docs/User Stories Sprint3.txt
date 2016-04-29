@@ -1,17 +1,23 @@
-As a player, I want to log in so that my profile statistics can be stored and retrieved over multiple sessions.
+As a player, I want to sign up for an account so that I can log in to play games, and so that the database and system can keep track of my record.
 
-As a player, I want to play a game so that I can test my skills against other competitors.
+As a player, I want to log in so that I can be able to play games, and so that my profile statistics can be stored and retrieved over multiple sessions.
 
-As a system, I want to roll the dice, so that player's can participate in the game and decide whether to bluff or tell the truth.
+As a player, I want to start a new game so that I can test my skills against other competitors.
 
-As a player, I want to tell the truth about my dice so that I can safely accumulate points.
+As a player, I want to invite other human(s) to join a new game I've started, so that I can play with my friend(s).
 
-As a player, I want to bluff about my dice so that I can get more points if I roll poorly.
+As a player, I want to join a game that my friend has started and invited me to, so that I can play with my friend.
 
-As a player, I want to call others on their bluffs so that I can benefit myself while simultaneously hurting my opponents.
+As a player, I want make an accurate claim about my dice so that I can safely accumulate points.
 
-As a player, I want to play my immunity card so that I don't lose points for getting called on my bluff.
+As a player, I want to make an inaccurate claim (bluff) about my dice so that I can get more points if I roll poorly.
 
-As a player, I want to check my scores and wins so I can see how I'm doing against the other players.
+As a player, I want to call others on their (potential) bluffs so that I can (if I'm right) benefit myself while simultaneously hurting my opponents.
 
-As a system, I want to collect scores and wins so that I can form a database of results.
+As a player, I want to check my win record so I can see how I compare to the other players.
+
+As a player, I want to visit the help page so I can get an overview of how to play the game correctly.
+
+As a database, I want to collect the names of winners so that I can form a database of results.
+
+As a database, I want to display the database of results so that other players can see how they compare to their competitors.

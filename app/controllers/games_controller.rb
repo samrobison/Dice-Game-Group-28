@@ -151,7 +151,7 @@ private
 			game.scores[callie.email] = 0 if game.scores[callie.email] < 0
 			# increase the bluff callers score by the amount called
 			game.scores[caller.email] += game.call
-			game.history += "#{caller.email} called was correct\n "
+			game.history += "#{caller.email}'s call was correct\n "
 		#bluff called incorrectly
 		else
 			#increase bluffers score by call * 3/2
@@ -159,7 +159,7 @@ private
 			#decres bluff callers score by call
 			game.scores[caller.email] -= game.call
 			game.scores[caller.email] = 0 if game.scores[caller.email] < 0
-			game.history += "#{caller.email} called was incorrect \n"
+			game.history += "#{caller.email}'s call was incorrect \n"
 		end
 
 		game.save!

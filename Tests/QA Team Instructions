@@ -68,3 +68,25 @@ game) navigate back to the homepage and then the player rankings page to make su
 start a new game until you win one. Having won one (and only one), navigate back to the homepage and then the player rankings page.
 
 Expected output: you should see that your number of wins has increased by 1 from what the number was when you began this test.
+
+TEST MULTIPLE HUMAN GAMES
+
+Navigate to the homepage, sign up/log in if you haven't already, and start a new game by clicking the "New Game" button in the top right
+of the page. Enter a name for the game, choose "one" for number of other players, and add the email of another human who has also
+signed up. Once you've done this, press the "Start Game" button. Have the other human enter the URL of the game you've created
+(for example, http://159.203.222.152:3000/games/207) into their computer/browser.
+
+Expected output: the other human should see the same game that you do, and it should be their turn first. You two should then be able
+to play a game as normal.
+
+TEST TIE GAME MULTIPLE WINNERS
+
+Navigate to the homepage, sign up/log in if you haven't already, and start a new game by clicking the "New Game" button in the top right
+of the page. Enter a name for the game, and choose any number of other players, but only choose as many as you have participants for
+this test (minimum two). This will be an all-human game, so enter the sufficient number of emails that belong to signed-up players
+(equal to the number of "other players" chosen) (separated by commas) and click the "Start Game" button. Then have the other human(s)
+enter the URL of the game you've created (for example, http://159.203.222.152:3000/games/207) into their computer(s)/browser(s). Then
+have everybody play through the game by only calling bluffs-- no calls will be made in this game. At the end of the game, everyone's
+score should be zero.
+
+Expected output: the game should list all the participants as winners.

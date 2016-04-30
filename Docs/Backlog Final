@@ -1,0 +1,41 @@
+BACKLOG SPRINT ONE
+
+PRODUCT BACKLOG
+ID	Story Name					          Progress	Priority	Comments	
+ 1	User logs in				          planned		1			    Need to decide on database type/structure
+ 2	User joins game 			        planned   2         Need to include order assignment and determination of leader
+ 3	User rolls dice 			        planned	  3			
+ 4	User makes claim		      	  planned   4			    Maybe include evaluation of if claim is true or false in this step
+ 5	User calls bluff			        planned		5
+ 6	User plays immunity card	    planned   8
+ 7	User checks stats			        planned   7		     	Potentially just have scores and wins displayed at all times
+ 8	System records stats		      planned	  6
+ 
+ 
+BACKLOG SPRINT TWO
+ 
+PRODUCT BACKLOG
+ID	Story Name					          Progress	Priority	Comments	
+2   User joins game               completed           ended up keeping order same
+3   User rolls dice               completed           altered so that system rolls dice, not user
+4   User makes claim              completed           did not include evaluation of if claim is true or false in this step
+5   User calls bluff              completed           
+1   User logs in                  planned   1         need to decide on database type/structure
+6   User plays immunity card      planned   4         
+7   User checks stats             planned   3         potentially just have scores and wins displayed at all times
+8   System records stats          planned   2       
+
+
+BACKLOG SPRINT THREE
+ID	Story Name					          Progress	Priority	Comments	
+1   User logs in                  completed           decided on SQLite in a Rails webpage
+2   User joins game               completed           "joins game" is now distinct from "creates game" in that one joins a game one has been invited to
+4   User makes claim              completed           claim can be accurate or inaccurate
+5   User calls bluff              completed           bluff can be correct or incorrect
+6   User calls immunity card      discarded           did not implement, as game was sufficiently complex, and an immunity card would have been difficult to graft onto existing framework
+7   User checks stats             completed           user checks stats on Help page
+8   Database records stats        completed           database records only wins, not scores
+9   Database displays stats       completed           stats are displayed on Help page
+10  User signs up                 completed           user must sign up for an account to be able to log in
+11  User creates game             completed           in creating a game, user gives it an identifier and defines the number and type of participants
+12  User invites others           completed           user can, when creating a game, invite other human players to join

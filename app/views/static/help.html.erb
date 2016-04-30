@@ -1,15 +1,32 @@
 <h1>Playing our dice game</h1>
 
 <ul>
-  <li> To play the game, you must enter the name of the game as well as the desired number of players for the game.</li> 
-  <li> If you have more than 1 human player, enter the other player's emails where specified.</li>
+  <li> To play the game, you must enter a (unique, as-yet-unused)name of the game as well as the desired number of players for the game.</li> 
+  <li> If you have more than 1 human player (that is, one who is not yourself), enter the other player's emails where specified.</li>
   <li> The remaining player slots will be AI.</li>
-  <li> The order of players is randomized.</li>
-  <li> When it is your turn you will be presented with your dice total and two options: make a claim or call a bluff.</li>
-  <li> When making a claim you will be have two courses of action: be honest or bluff.</li>
-  <li> The other option is to call a bluff. You would call a bluff when you think the player before you is being dishonest.</li>
-  <li> If you were correct about the person bluffing, you get 150% of the bluff total and the bluffer loses double their bluff score.</li>
-  <li> If you were wrong about the person bluffing, they steal that amount of points from you</li>
-  <li> The winner is decided at the end of the 5th round</li>
-  <li> In the event of a tie, </li>
+  <li> When it is your turn you will be presented with the total value of the three dice you have "rolled" and two options: make a call or</li>
+  <li> call a bluff.</li>
+  <li> When making a call you will have two potential courses of action: call a value less than or equal to your dice total,</li>
+  <li> or call a higher value.</li>
+  <li> Calling a less-than-or-equal value is considered being honest. Calling a higher value is considered bluffing.</li> 
+  <li> Alternatively, you can choose not to make a call. You can instead call a bluff, which means that you think the player who went</li>
+  <li> before you was bluffing about the value of their dice.</li>
+  <li> If you have made a call during your turn, then the value of your call is added to your score.</li>
+  <li> If you have called a bluff during your turn, then one of two things will happen.</li>
+  <li> If you were correct about the person bluffing, your score increases by the value of the last call made (this call was made by</li>
+  <li> the bluffer), and bluffer's score decreases by twice the value of the last call made.</li>
+  <li> If you were wrong about the person bluffing, however, your score decreases by the amount of the last call made, and the</li>
+  <li> not-actually-a-bluffer's score increases by three times the value of the last call made, divided by two.</li>
+  <li> Note that under no circumstances will any player's score dip below zero.</li>
+  <li> Your turn ends when you have either made a call or called a bluff.</li>
+  <li> If you have made a call for your turn, then your turn ends and the player after you in the turn order takes a turn.</li>
+  <li> If you have called a bluff for your turn, though, the round ends after your turn ends, regardless of whether the person was</li>
+  <li> actually bluffing or not. Points are distributed as described above, and the round ends.</li>
+  <li> One constraint of the game is that, if you intend to make a call, your call must be greater than the value of the last call</li>
+  <li> made.</li>
+  <li> If the player before you has called 18 (the highest possible value of the dice), you must call a bluff, as you cannot call a value.</li>
+  <li> The game ends when three rounds have been played.</li>
+  <li> Whoever has the most points at the end of three rounds wins.</li>
+  <li> In the event of a tie for most points, all players who have tied for first are declared joint winners.</li>
+  <li> Good luck! And let the good times........... ROLL!!!!!!!</li>
 </ul>

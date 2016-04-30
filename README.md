@@ -1,35 +1,30 @@
 # Dice-Game-Group-28
 
 ###### Set up
-To play our game, enter http://159.203.222.152:3000/ into the your search bar. This will bring you to the games home screen. Click the "sign up now" button and fill in the fields to make your account. Once you have an account you will be able to use the "login in" button. 
+To play our game, enter http://159.203.222.152:3000/ into your search bar. This will bring you to the game's home screen. Click the "sign up now" button and fill in the fields to make your account. Once you have an account you will be logged in. You should see a
+"New Game" button appear in the top right corner of the homepage.
 
 ###### Overview of Rules
 
-In our game, some number of players between two and seven join a game composed of 3 rounds. In each round, the players are randomly assigned an order, and whichever player is currently winning (or has the most wins in the case of tied highest score, or has been randomly selected in the case of tied highest score and tied most wins) begins the round. (This person is hereinafter referred to as the "leader.") Each player rolls three six-sided dice. The leader then makes a claim about the summed value of their three rolled dice. This claim can be true or false. (This player is hereinafter referred to as the "claimant.") The player next to the claimant can say that the claimant is bluffing, or can decline to do so. If the bluff-caller declines to say that the claimant is bluffing, then the claimant's score is increased by the amount claimed as the summed value of the claimant's dice. (This claimed value is hereinafter referred to as "x.") If the bluff-caller does say that the claimant is bluffing, but the summed value is actually equal to x, then the claimant's score is increased by x*3/2 (using integer division), and the bluff-caller's score is reduced by x. Note that in no case can any player's score become less than 0. If the bluff-caller says that the claimant is bluffing, and the values of the claimant's dice do not in fact equal x, the claimant's score is reduced by x and the bluff-caller's score is increased by x. However, at the beginning of each game, each player comes into possession of an "immunity card." If the claimant's bluff if called correctly (the values of the claimant's dice do not add up to x), the claimant can play their immunity card, in which case the bluff-caller's score does not increase, nor does the claimant's score decrease. Each player can only use an immunity card once per game.
-
-After the bluff-caller calls a bluff the round ends, a new order of players is randomly chosen, and a new leader is determined to begin the next round. If the person winning the game has not changed during the last round, this new leader is the same as the old leader. After 3 rounds have finished, whoever has the highest score wins the game.
-
-If players are tied for the highest score after three rounds, these players go into an extra round-- an elimination round. The elimination round proceeds in exactly the same way as any other round, except that at the end of an elimination round, whichever player has the highest score wins the game. In the case of a tie, another elimination round is played under the same conditions. If, after three elimination rounds, no winner can be determined, a winner will be randomly chosen among the remaining contenders.
-
-Players will be able to access the number of games that their competitors have won.
-
-
+In our game, some number of players between two and eight join a game composed of three rounds. At the beginning of each round, the system rolls three six-sided dice for each player. The player who is first in the turn order then has two options: "make a call" or "call a bluff." If the player chooses to make a call, they have two potential courses of action: call a vlue less than or equal to their dice total, or call a greater value. Calling a less-than-or-equal value is considered being honest. Calling a higher value is considered bluffing. Alternatively, you can choose not to make a call. You can instead call a bluff, which means that you think the player who went before you was bluffing about the value of their dice. Of course, if the person who's first in the turn order chooses to call a bluff, this doesn't really make sense, because no one's made any call about the value of their dice, so no one can have bluffed. If the player has chosen to make a call instead of call a bluff, the value of the call is added to that player's score. If the player has called a bluff during their turn, then one of two things will happen. If you were correct about the person bluffing, your score increases by the value of the last call made, and bluffer's score decreases by twice the value of the last call made. (This call was made by the bluffer; in the case of the first person calling a bluff on their turn, "last call made" is the default value of zero, and no one's score changes). If the player was wrong about the last person bluffing, however, the player's score decreases by the amount of the last call made, and the not-actually-a-bluffer's score increases by three times the value of the last call made, divided by two. Note that under no circumstances will any player's score dip below zero. A player's turn ends when they have either made a call or called a bluff. If the player has made a call for their turn, then their turn ends and the player after them in the turn order takes a turn. If the player has called a bluff for their turn, though, the round ends after their turn ends, regardless of whether the last person was actually bluffing or not. Points are distributed as described above, and the round ends. One constraint of the game is that, if a player intends to make a call, that call must be greater than the value of the last call made (in the case of a round's first turn, then, that call must be at least one). If the previous player has called 18 (the highest possible value of the dice), the current player must call a bluff, as they cannot call a value. The game ends when three rounds have been played. Whoever has the most points at the end of three rounds wins. In the event of a tie for most points, all players who have tied for first are declared joint winners.
 
 ###### Playing the Game
 
-Click on the new game button in the upper left corner. Choose a user name, the number of other players, and then choose the names of other human players (if there are any). The number of CPU's will be the number of human players - total number of players.
+Click on the new game button in the upper left corner. Enter a string to identify the game (this string must not have been used before by anyone, so a moderately long string of random letters is probably the best choice), the number of other players, and then choose whether to add any human players (outside of yourself. You don't need to explicitly add yourself). You can only add a human player if that human has signed up with the game. For each human you want to add, enter their email (separated by commas if multiple humans are added). Once you've done this, click the "Start Game" button. Other humans join a game they have been added to by entering the URL of the game you've created in their computer/browser (for example, http://159.203.222.152:3000/games/207). Note that the turn order of multiple-human games is such that one of the added human players will have the first turn-- not the human who created the game. The number of CPU's will be the total number of players minus the number of human players.
 
-Each human player needs their own computer and account. 
+Again, each human player needs their own computer and account. 
+
+A brief overview of gameplay is provided below for review.
 
 Round x: 
 
-Player1 makes a call. The player can choose to bluff or to make a call. 
+Player1's turn. Player1 can choose to bluff or to make a call. 
 <end of player1s turn>
 
-Player2 can choose to call a bluff on player1 or to make a call. 
+Player2 can then choose to call a bluff on player1 or to make a call. 
 <end of player2s turn>
 
 If a player chooses to call a bluff it will end the round. 
-The player with the highest score will start the new round.
+
 The game ends with the end of the third round.
 

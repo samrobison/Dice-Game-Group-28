@@ -8,9 +8,9 @@ As a player, I want to invite other human(s) to join a new game I've started, so
 
 As a player, I want to join a game that my friend has started and invited me to, so that I can play with my friend.
 
-As a player, I want make an accurate claim about my dice so that I can safely accumulate points.
+As a player, I want make an accurate call about my dice so that I can safely accumulate points.
 
-As a player, I want to make an inaccurate claim (bluff) about my dice so that I can get more points if I roll poorly.
+As a player, I want to make an inaccurate call (bluff) about my dice so that I can get more points if I roll poorly.
 
 As a player, I want to call others on their (potential) bluffs so that I can (if I'm right) benefit myself while simultaneously hurting my opponents.
 

@@ -30,7 +30,7 @@ BACKLOG SPRINT THREE
 ID	Story Name					          Progress	Priority	Comments	
 1   User logs in                  completed           decided on SQLite in a Rails webpage
 2   User joins game               completed           "joins game" is now distinct from "creates game" in that one joins a game one has been invited to
-4   User makes claim              completed           claim can be accurate or inaccurate
+4   User makes call               completed           call can be accurate or inaccurate ("claim" changed to "call" to reflect what's on the webpage)
 5   User calls bluff              completed           bluff can be correct or incorrect
 6   User calls immunity card      discarded           did not implement, as game was sufficiently complex, and an immunity card would have been difficult to graft onto existing framework
 7   User checks stats             completed           user checks stats on Help page

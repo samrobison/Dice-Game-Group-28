@@ -1,0 +1,70 @@
+Because our game is a Rails app, and because the gem we used to create the app places certain limits on testing, we had to talk to Corey
+about what to do. He told us to write tests to cover as much as we could (you can find these tests in unitTestWatir.rb, and you can find
+the output of these tests in UnitTestOutput.txt), and then to write instructions for an imaginary Quality Assurance Team to cover anything
+left out. These instructions follow.
+
+TEST FUNCTION OF HELP PAGE
+
+Navigate to http://159.203.222.152:3000/ (hereinafter referred to as "the homepage"), and click "Help" in the top right.
+
+Expected output: a text page detailing how to play the game
+
+TEST FUNCTION OF UNSUCCESSFUL WRONG EMAIL SIGN IN
+
+Navigate to the homepage. You should see a "Sign Up Now!" button in the middle of the page. You should NOT see a link for "New Game" in
+the top right of the page. Click the sign up now button, and you should be taken to a "Sign up" page that allows you to enter your email, 
+your chosen password, and a confirmation of that chosen password. In the email field, enter any string that does not contain the @
+symbol. The field should acquire a red outline. Enter whatever password you like in the corresponding fields, and click the "Sign up"
+button below the fields. 
+
+Expected output: the page should reject your sign up, and tell you to please enter an email.
+
+TEST FUNCTION OF LOG IN LINK ON SIGN UP PAGE
+
+Navigate to the homepage. Click the "Sign Up Now!" button in the middle of the page. You should be taken to a page with sign up fields,
+with a "Log in" link below a "Sign up" button at the bottom. Click this link.
+
+Expected output: you should be taken to a "Log in" page with fields for Email and Password, as well as a "Remember Me" checkbox, a 
+"Log in" button, and a "Sign up" link.
+
+TEST FUNCTION OF SIGN UP LINK ON LOG IN PAGE
+
+Navigate to http://159.203.222.152:3000/users/sign_in . You should see a "Log in" page with a "Sign up" link at the bottom. Click this
+link.
+
+Expected output: you should now see a "Sign up" page with fields for Email, Password, and Password confirmation, in addition to a "Sign
+up" button and a "Log in" link.
+
+TEST FUNCTION OF SUCCESSFUL SIGN IN
+
+Navigate to the homepage. You should see a "Sign Up Now!" button in the middle of the page. You should NOT see a link for "New Game" in
+the top right of the page. Click the sign up now button, and you should be taken to a "Sign up" page that allows you to enter your email, 
+your chosen password, and a confirmation of that chosen password. Enter any email, fake or real, and enter the same password into the two 
+fields for password. Click the "Sign up" button below the fields. You should then be taken back to the homepage.
+
+Expected output: you should now see a "New Game" link in the top right of the homepage.
+
+TEST FUNCTION OF BLUFF FIRST TURN
+
+Navigate to the homepage, sign up/log in if you haven't already, and click the "New Game" link at the top right. Choose the number of
+players to add as 1, and do not add any humans. Click the "Start Game" button. You should now see the game screen, and it should
+be your turn. Select "Call Bluff," and then click the "Submit Turn" button. 
+
+Expected output: The game should say that you called a bluff, that you called your opponent (cpu0) on bluffing, and that your call was
+incorrect. Your score should remain at 0, and the score of the opponent on whom you called the bluff (cpu0) should be whatever cpu0 has
+just called, as it is now cpu0's turn.
+
+TEST FUNCTION OF PLAYER RANKINGS NAVIGATION
+
+Navigate to the homepage, and click the "here" link that should send you to the player rankings page.
+
+Expected output: you should see a "Player Rankings" page which contains rows of "{email address or cpu number}: {# of wins} wins".
+
+TEST FUNCTION OF PLAYER RANKINGS WIN INCREMENT
+
+Navigate to the homepage, sign up/log in if you haven't already, and check the player rankings page to see how many wins you have. Click
+the "New Game" link at the top right, and win the game. If you don't win your first game, or your first few games, then (after each
+game) navigate back to the homepage and then the player rankings page to make sure that your number of wins has remained the same. Then 
+start a new game until you win one. Having won one (and only one), navigate back to the homepage and then the player rankings page.
+
+Expected output: you should see that your number of wins has increased by 1 from what the number was when you began this test.

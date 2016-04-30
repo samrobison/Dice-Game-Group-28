@@ -1,7 +1,7 @@
 Because our game is a Rails app, and because the gem we used to create the app places certain limits on testing, we had to talk to Corey
 about what to do. He told us to write tests to cover as much as we could (you can find these tests in unitTestWatir.rb, and you can find
 the output of these tests in UnitTestOutput.txt), and then to write instructions for an imaginary Quality Assurance Team to cover anything
-left out. These instructions follow.
+left out. These instructions follow. (Note that I've tested all of this, and it works fine, at least by my findings)
 
 TEST FUNCTION OF HELP PAGE
 

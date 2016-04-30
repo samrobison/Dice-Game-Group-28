@@ -28,3 +28,6 @@ If a player chooses to call a bluff it will end the round.
 
 The game ends with the end of the third round.
 
+###### Other things
+
+To view statistics (player rankings-- the number of wins by each player), either go directly to http://159.203.222.152:3000/static/stats , or navigate to the homepage, and then click the blue "here" in the sentence "View player rankings here" that is displayed on the homepage. To get a refresher on the rules, either go directly to http://159.203.222.152:3000/static/help , or navigate to the homepage, and then click the "Help" link in the top right of the website.

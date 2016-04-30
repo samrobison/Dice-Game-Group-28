@@ -2,7 +2,7 @@ As a player, I want to sign up for an account so that I can log in to play games
 
 As a player, I want to log in so that I can be able to play games, and so that my profile statistics can be stored and retrieved over multiple sessions.
 
-As a player, I want to start a new game so that I can test my skills against other competitors.
+As a player, I want to create a new game so that I can test my skills against other competitors.
 
 As a player, I want to invite other human(s) to join a new game I've started, so that I can play with my friend(s).
 
